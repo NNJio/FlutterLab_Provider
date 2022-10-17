@@ -33,7 +33,7 @@ class _SecondPageState extends State<SecondPage> {
           FloatingActionButton(
             onPressed: () => context.read<ShoppingCart>().addItem('Bread'),
             tooltip: 'Add Item',
-            child: const Icon(Icons.remove),
+            child: const Icon(Icons.breakfast_dining),
           ),
         ],
       ),

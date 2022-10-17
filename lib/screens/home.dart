@@ -25,7 +25,9 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times: ${context.watch<Counter>().count}',
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/second');
+              },
               child: const Text('Next Page'),
             )
           ],

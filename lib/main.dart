@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         '/':(context) => const MyHomePage(),
         '/second':(context) => const SecondPage(),
       },
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       // title: 'Flutter Demo',
       // theme: ThemeData(
       //   backgroundColor: Colors.grey,
