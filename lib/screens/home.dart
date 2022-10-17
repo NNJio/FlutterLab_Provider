@@ -3,9 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:provider1/providers/counter_provider.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage();
-
- 
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -16,7 +14,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('This is Provider test app.'),
+        title:
+            Text('This is Provider test app ${context.watch<Counter>().count}'),
       ),
       body: Center(
         child: Column(
@@ -25,7 +24,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times: ${context.watch<Counter>().count}',
             ),
-            const Count(),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Next Page'),
+            )
           ],
         ),
       ),
