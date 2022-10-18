@@ -30,12 +30,6 @@ class MyApp extends StatelessWidget {
         '/second':(context) => const SecondPage(),
       },
       debugShowCheckedModeBanner: false,
-      // title: 'Flutter Demo',
-      // theme: ThemeData(
-      //   backgroundColor: Colors.grey,
-      //   primarySwatch: Colors.blue,
-      // ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
