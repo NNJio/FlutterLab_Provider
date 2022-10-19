@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage();
-
- 
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -14,23 +12,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       appBar: AppBar(
-     
-        title: Text('fefef'),
+        title: const Text('This\'s app Provider V3'),
       ),
       body: Center(
-        
         child: Column(
-   
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
