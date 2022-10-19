@@ -15,5 +15,6 @@ class Todo with ChangeNotifier {
 
   void delete(int index) {
     tasks.removeAt(index);
+    notifyListeners();
   }
 }
